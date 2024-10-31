@@ -88,7 +88,7 @@ main {
 }
 
 .flag-description img {
-    width: 250px;
+    width: 150px;
     height: auto;
     margin-right: 10px;
     border: 1px solid #ccc;
@@ -112,7 +112,12 @@ main {
 
 .resources ul li a {
     color: #2a5783;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: blue; /* Blue underline for links */
+}
+
+.resources ul li a:hover {
+    color: #0056b3; /* Darker blue on hover */
 }
 
 footer {
@@ -135,6 +140,7 @@ footer p:last-of-type {
 }
 
 .line-breaker {
-    width: 600px;
-    margin-left: 100px;
+    width: 100%;
+    border-top: 2px solid #ccc;
+    margin: 10px 0;
 }
