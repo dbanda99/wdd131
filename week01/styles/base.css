@@ -81,7 +81,7 @@ main {
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
-    color: #333; /* Ensure this title remains uncolored */
+    color: #333;
 }
 
 .flag-description {
@@ -117,11 +117,11 @@ main {
 .resources ul li a {
     color: #2a5783;
     text-decoration: underline;
-    text-decoration-color: blue; /* Blue underline for links */
+    text-decoration-color: blue;
 }
 
 .resources ul li a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3;
 }
 
 footer {
