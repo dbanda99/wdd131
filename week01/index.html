@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubia M. Francesco - WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - David Banda</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course page by David Banda. Learn more about web development resources and my background.">
+    <meta name="author" content="David Banda">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Rubia M. Francesco</span></h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">David Banda</span></h1>
         <nav>
             <ul>
                 <li><a href="#">LinkedIn</a></li>
@@ -22,15 +24,23 @@
     <main>
         <section class="about-me">
             <h2>About Me</h2>
-            <p>My name is Rubia and I go by Ruby. I was born in South Africa and live with my family in Madagascar. I am currently working as an administrative legal assistant at a law firm. My children are my world, and I love spending time with them. I love to travel, and I love to learn new things.</p>
+            <p>My name is David Banda, and yeah
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit sit quidem praesentium, 
+                aspernatur sunt a inventore itaque molestiae aut voluptates aliquam maxime, quos sequi dolorem 
+                facere fugit? Quo, corporis?
+            </p>
             <img src="images/Me.jpeg" alt="Rubia's photo" class="profile-image">
-            <h3>Toloria, Madagascar</h3>
+            <h3>Texas, United States</h3>
             <hr class="line-breaker">
             <div class="flag-description">
                 <img src="images/texas-flag.png" alt="Official Flag of Madagascar">
-                <p>Madagascar is the 4th largest island in the world and is located in the Indian Ocean. It is home to 5% of the world's plant and animal species, of which more than 80% are endemic to Madagascar. The island is best known for its lemurs, baobab trees, and vanilla.</p>
+                <p>Texas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates natus eos, reprehenderit
+                molestiae, nam beatae dolorum rerum libero ea praesentium maiores excepturi explicabo in ab esse dolor 
+                laborum numquam eius. Dignissimos at quam obcaecati rem magni id, nulla dolores numquam? Voluptatibus 
+                nostrum quis vel accusamus numquam reiciendis commodi nemo harum!
+            </p>
             </div>
-            <p class="flag-caption">Official Flag of Madagascar</p>
+            <p class="flag-caption">Official Flag of Texas</p>
         </section>
 
         <aside class="resources">
@@ -47,8 +57,10 @@
     </main>
 
     <footer>
-        <p>&copy;2024 Rubia Magdalena Francesco <span class="location">Madagascar</span></p>
-        <p>Last Modification: 01/09/2024 15:26:53</p>
+        <p>&copy; <span id="currentyear">2024</span> David Banda <span class="location">Texas</span></p>
+        <p id="lastModified">Last Modification: 01/09/2024 15:26:53</p>
     </footer>
+
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
