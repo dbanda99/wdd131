@@ -1,159 +1,126 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #2a5783;
-    color: white;
+    background-color: #00537a;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px;
 }
 
-header h1 {
-    font-size: 1.5em;
-}
-
-header .highlight {
+header h1 span {
     color: #ffc107;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 10px 0;
+nav {
     background-color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-nav ul li a {
-    color: white;
+nav a {
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .about-me, .resources {
-    background-color: #f0f4f7;
-    padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+    width: 45%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .about-me h2, .resources h2 {
-    background-color: #2a5783;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #00537a;
+    color: #fff;
     text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.about-me p, .resources ul {
-    margin-top: 10px;
-    line-height: 1.6;
-}
-
-.about-me img {
-    display: block;
-    margin: 20px auto;
-    width: 150px;
-    border-radius: 10px;
+.about-me .content, .resources .content {
+    padding: 20px;
 }
 
 .about-me h3 {
-    margin-top: 20px;
     font-weight: bold;
-    text-align: center;
-    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
 }
 
-.flag-description {
+.content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 15px;
     margin-top: 10px;
-    font-size: 0.9em;
 }
 
-.flag-description img {
+.profile-img {
     width: 150px;
-    height: auto;
-    margin-right: 10px;
-    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.flag-caption {
-    text-align: left;
-    font-size: 0.8em;
-    font-style: italic;
-    color: #555;
+.flag-img {
+    width: 80px;
+    border: 1px solid #ddd;
+}
+
+/* Center content in Web Dev Resources */
+.resources .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height to center vertically */
+    text-align: left; /* Left-aligns the text within the centered container */
 }
 
 .resources ul {
     list-style-type: none;
-    padding-left: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .resources ul li {
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .resources ul li a {
-    color: #2a5783;
-    text-decoration: underline;
-    text-decoration-color: blue;
-}
-
-.resources ul li a:hover {
-    color: #0056b3;
+    color: #6d28d9;
+    text-decoration: none;
 }
 
 footer {
-    background-color: #2a5783;
-    color: white;
+    background-color: #00537a;
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-}
-
-footer .location {
-    margin-left: 10px;
-    color: #ffc107;
-}
-
-footer p:last-of-type {
-    color: #ffc107;
-    margin-top: 5px;
-    font-size: 0.85em;
-}
-
-.line-breaker {
+    padding: 10px;
+    font-size: 14px;
     width: 100%;
-    border-top: 2px solid #ccc;
-    margin: 10px 0;
 }
 
-/* Corrected overflow-wrap and max-width */
-.markdown-body li {
-    overflow-wrap: break-word; /* Replaces invalid break-all */
-}
-
-.markdown-body pre code, .markdown-body pre tt {
-    max-width: none; /* Replaces invalid auto */
+#last-modified {
+    color: #ffc107;
 }

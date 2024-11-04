@@ -3,54 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Rubia M. Francesco</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course page by Rubia M. Francesco. Learn more about web development resources and my background.">
-    <meta name="author" content="Rubia M. Francesco">
+    <title>WDD 131 - Dynamic Web Fundamentals - David Banda</title>
+    <meta name="description" content="This is a webpage for Cumorah Academy BYU WDD 131">
+    <meta name="author" content="David Banda">
     <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Rubia M. Francesco</span></h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>David Banda</span></h1>
         <nav>
-            <ul>
-                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
-                <li><a href="#" target="_blank">Final Project</a></li>
-                <li><a href="#">Dev.to Community</a></li>
-                <li><a href="#">Smashing Magazine</a></li>
-                <li><a href="#">CSS Tricks</a></li>
-            </ul>
+            <a href="#">LinkedIn</a>
+            <a href="#">I-Learn</a>
+            <a href="#">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
-
+    
     <main>
         <section class="about-me">
             <h2>About Me</h2>
-            <p>My name is Rubia and I go by Ruby. I was born in South Africa and live with my family in Madagascar. I am currently working as an administrative legal assistant at a law firm. My children are my world, and I love spending time with them. I love to travel, and I love to learn new things.</p>
-            <img src="images/Me.jpeg" alt="Rubia's photo" class="profile-image">
-            <h3>Toloria, Madagascar</h3>
-            <hr class="line-breaker">
-            <div class="flag-description">
-                <img src="images/texas-flag.png" alt="Official Flag of Madagascar">
-                <p>Madagascar is the 4th largest island in the world and is located in the Indian Ocean. It is home to 5% of the world's plant and animal species, of which more than 80% are endemic to Madagascar. The island is best known for its lemurs, baobab trees, and vanilla.</p>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio distinctio modi 
+                    quod nemo ad libero tempora saepe, repellat maxime quae accusamus quaerat tenetur 
+                    possimus. Laboriosam illo pariatur deleniti! Molestias, sunt et error tempora est 
+                    nesciunt. Eveniet maiores molestiae reiciendis obcaecati necessitatibus officiis 
+                    repudiandae soluta cum, nam non perferendis blanditiis recusandae?</p>
+                <img src="images/Me.jpeg" alt="Profile picture of Rubia" class="profile-img">
             </div>
-            <p class="flag-caption">Official Flag of Madagascar</p>
+            <h3>Texas, United States</h3>
+            <div class="content">
+                <img src="images/texas-flag.png" alt="Official Flag of Madagascar" class="flag-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint assumenda ex nam 
+                    deleniti temporibus dicta quidem optio dolorum ipsam consequatur corporis atque 
+                    quos quasi obcaecati, inventore recusandae. Beatae incidunt temporibus, voluptatem, 
+                    excepturi fugiat officiis modi perferendis veritatis dolore ex obcaecati blanditiis 
+                    impedit, possimus nulla! Commodi veritatis ducimus similique neque perferendis.</p>
+            </div>
         </section>
-
-        <aside class="resources">
+        
+        <section class="resources">
             <h2>Web Dev Resources</h2>
             <ul>
-                <li><a href="#">W3 Schools</a></li>
-                <li><a href="#">Udemy</a></li>
-                <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://w3schools.com">W3 Schools</a></li>
+                <li><a href="https://udemy.com">Udemy</a></li>
+                <li><a href="https://loremipsum.io">Lorem Picsum Image Placeholder</a></li>
             </ul>
-        </aside>
+
+            <label for="number1">Number 1</label>
+            <input type="number" id="number1"/>
+
+            <label for="number2">Number 2</label>
+            <input type="number" id="number2"/>
+
+            <button id="doTheCalculation">Calculate</button>
+
+            <p id="result">Result</p>
+
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear">2024</span> Rubia Magdalena Francesco <span class="location">Madagascar</span></p>
-        <p id="lastModified">Last Modification: 01/09/2024 15:26:53</p>
+        <p>&copy;2024 David Banda, United States</p>
+        <p id="last-modified">Last Modification: </p>
     </footer>
 
     <script src="scripts/getdates.js" defer></script>
