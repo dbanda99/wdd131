@@ -12,10 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hamburger menu functionality
     const nav = document.querySelector("nav");
-    const toggleButton = document.createElement("button");
-    toggleButton.innerText = "☰";
-    toggleButton.id = "menu-toggle";
-    nav.parentElement.insertBefore(toggleButton, nav);
+    const toggleButton = document.getElementById("menu-toggle");
 
     toggleButton.addEventListener("click", () => {
         nav.classList.toggle("visible");

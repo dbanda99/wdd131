@@ -1,9 +1,14 @@
-/* temples-large.css */
-nav {
-    flex-direction: row;
-    justify-content: center;
-}
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
 
-#temple-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    #menu-toggle {
+        display: none;
+    }
+
+    #temple-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }

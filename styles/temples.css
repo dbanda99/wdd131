@@ -1,25 +1,53 @@
-/* temples.css */
+:root {
+    --primary-color: #4A006E;
+    --secondary-color: #6A0DAD;
+    --text-color: white;
+    --font-family: 'Roboto', sans-serif;
+}
+
 body {
-    font-family: 'Your Google Font', sans-serif;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #4A006E;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 1em;
+    position: relative;
+}
+
+#menu-toggle {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
 }
 
+nav.visible {
+    display: flex;
+}
+
 nav a {
-    color: white;
+    color: var(--text-color);
     padding: 0.5em;
     text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
 }
 
 #temple-gallery {
@@ -30,8 +58,8 @@ nav a {
 }
 
 footer {
-    background-color: #4A006E;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
     padding: 0.5em;
 }
