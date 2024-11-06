@@ -19,7 +19,13 @@ header {
     position: relative;
 }
 
+h1 {
+    font-size: 1.5em;
+    color: white;
+}
+
 #menu-toggle {
+    display: inline-block;
     position: absolute;
     top: 1em;
     right: 1em;
@@ -31,23 +37,38 @@ header {
 }
 
 nav {
-    display: none;
+    display: none; /* Hidden by default for the dropdown */
     flex-direction: column;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 100%; /* Position dropdown menu below the header */
+    width: 100%;
+    left: 0;
+    padding: 1em 0;
     text-align: center;
-}
-
-nav.visible {
-    display: flex;
+    z-index: 10;
 }
 
 nav a {
     color: var(--text-color);
     padding: 0.5em;
     text-decoration: none;
+    display: block; /* Stack links vertically */
 }
 
 nav a:hover {
     background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+nav.visible {
+    display: flex; /* Display the navbar in dropdown format when visible */
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 1em;
 }
 
 #temple-gallery {
@@ -55,6 +76,12 @@ nav a:hover {
     grid-template-columns: 1fr;
     gap: 1em;
     padding: 1em;
+}
+
+#temple-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 footer {

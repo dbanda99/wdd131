@@ -1,14 +1,62 @@
 @media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1em 2em;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.5em;
+        color: white;
+        margin-right: 2em; /* Adds space between title and nav links */
+    }
+
     nav {
         display: flex;
-        justify-content: center;
+        flex-direction: row; /* Ensure nav links are in a row */
+        gap: 1em; /* Horizontal spacing between links */
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5em;
+    }
+
+    nav a:hover {
+        background-color: var(--secondary-color);
+        border-radius: 4px;
     }
 
     #menu-toggle {
-        display: none;
+        display: none; /* Hide the menu toggle icon on larger screens */
     }
 
     #temple-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr); /* Display images in a 3-column grid */
+        gap: 1em;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #temple-gallery img {
+        width: 100%;
+        height: 200px; /* Uniform height */
+        object-fit: cover;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-size: 0.9em;
     }
 }

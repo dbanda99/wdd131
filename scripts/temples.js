@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.getElementById("menu-toggle");
 
     toggleButton.addEventListener("click", () => {
-        nav.classList.toggle("visible");
+        nav.classList.toggle("visible"); // Toggle the visibility of the nav menu
     });
 });
