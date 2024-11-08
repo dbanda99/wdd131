@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-larger.css" media="(min-width: 768px)">
+
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Texas</h1>
+    </header>
+
+    <section class="image-section">
+        <picture>
+            <source srcset="https://picsum.photos/2000" media="(min-width: 768px)">
+            <img src="https://picsum.photos/2000" alt="Lemur in Madagascar">
+        </picture>
+    </section>
+
+    <section class="data-section">
+        <h2>Data</h2>
+        <ul>
+            <li><strong>Area:</strong> 695,662 sq km</li>
+            <li><strong>Population:</strong> Approximately 29 million</li>
+            <li><strong>Capital:</strong> Austin</li>
+            <li><strong>Languages:</strong> English</li>
+            <li><strong>Currency:</strong> US Dollar (USD)</li>
+            <li><strong>Time Zone:</strong> UTC-6</li>
+            <li><strong>Calling Code:</strong> +1</li>
+            <li><strong>Internet TLD:</strong> .us</li>
+        </ul>
+    </section>
+
+    <section class="weather-section">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <ul>
+            <li><strong>Temperature:</strong> 10°C</li>
+            <li><strong>Conditions:</strong> Partly Cloudy</li>
+            <li><strong>Wind:</strong> 5 km/h</li>
+            <li><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>©<span id="currentYear"></span> David Banda</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

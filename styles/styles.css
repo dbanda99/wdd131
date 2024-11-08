@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #d2232a;
+    --secondary-color: #009639;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+.hero {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-height: auto;
+    object-fit: cover; /* Ensures the image scales properly without stretching */
+    display: block;
+}
+
+.data-section, .weather-section {
+    padding: 20px;
+    border-top: 2px solid var(--primary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.6;
+}
+
+.weather-icon {
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.data-section, .weather-section {
+    padding: 20px;
+    border-top: 2px solid var(--primary-color);
+    text-align: center; /* Center-aligns text and elements */
+    max-width: 600px; /* Optional: Set a max-width for better readability */
+    margin: 0 auto; /* Centers the section horizontally */
+}
+
+.data-section ul, .weather-section ul {
+    display: inline-block; /* Centers the list itself */
+    text-align: left; /* Aligns the text inside the list items to the left */
+}
+
+@media (min-width: 768px) {
+    .weather-icon::after {
+        content: ' ⛅';
+    }
+}
