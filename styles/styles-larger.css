@@ -4,7 +4,7 @@
     /* Set image-section styling with a background image */
     .image-section {
         position: relative;
-        height: 900px;
+        height: 500px;
         background-image: url('https://wallpapergod.com/images/hd/texas-1920X1080-wallpaper-0hzktqbnow9sm5kz.webp'); /* Use a larger image for desktop */
         background-size: cover;
         background-position: center;

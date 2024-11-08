@@ -24,7 +24,7 @@ body {
 
 .image-section img {
     width: 100%;
-    max-height: auto;
+    max-height: none;
     object-fit: cover; /* Ensures the image scales properly without stretching */
     display: block;
 }

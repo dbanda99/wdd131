@@ -6,7 +6,6 @@
     <title>Texas</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-larger.css" media="(min-width: 768px)">
-
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -16,10 +15,11 @@
     </header>
 
     <section class="image-section">
-        <picture>
-            <source srcset="https://picsum.photos/2000" media="(min-width: 768px)">
-            <img src="https://picsum.photos/2000" alt="Lemur in Madagascar">
-        </picture>
+        <!-- Small image for mobile screens -->
+        <img src="https://picsum.photos/600" alt="Image of Texas - Small" id="smallImage">
+        
+        <!-- Large image for larger screens -->
+        <img src="https://wallpapergod.com/images/hd/texas-1920X1080-wallpaper-0hzktqbnow9sm5kz.webp" alt="Image of Texas - Large" id="largeImage" style="display: none;">
     </section>
 
     <section class="data-section">
