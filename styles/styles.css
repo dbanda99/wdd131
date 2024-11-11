@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
 }
 
@@ -22,16 +22,24 @@ body {
     text-align: center;
 }
 
+.image-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .image-section img {
     width: 100%;
-    max-height: none;
-    object-fit: cover; /* Ensures the image scales properly without stretching */
-    display: block;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .data-section, .weather-section {
     padding: 20px;
     border-top: 2px solid var(--primary-color);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -54,23 +62,4 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
-}
-
-.data-section, .weather-section {
-    padding: 20px;
-    border-top: 2px solid var(--primary-color);
-    text-align: center; /* Center-aligns text and elements */
-    max-width: 600px; /* Optional: Set a max-width for better readability */
-    margin: 0 auto; /* Centers the section horizontally */
-}
-
-.data-section ul, .weather-section ul {
-    display: inline-block; /* Centers the list itself */
-    text-align: left; /* Aligns the text inside the list items to the left */
-}
-
-@media (min-width: 768px) {
-    .weather-icon::after {
-        content: ' ⛅';
-    }
 }

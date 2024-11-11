@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Texas</title>
+    <title>Texas - A Look at the State</title>
+    <meta name="description" content="Information about the state of Texas including its area, population, and current weather.">
+    <meta name="author" content="David Banda">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-larger.css" media="(min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" preload>
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -15,11 +18,11 @@
     </header>
 
     <section class="image-section">
-        <!-- Small image for mobile screens -->
-        <img src="https://picsum.photos/600" alt="Image of Texas - Small" id="smallImage">
-        
-        <!-- Large image for larger screens -->
-        <img src="https://wallpapergod.com/images/hd/texas-1920X1080-wallpaper-0hzktqbnow9sm5kz.webp" alt="Image of Texas - Large" id="largeImage" style="display: none;">
+        <picture>
+            <source srcset="images/image-two.jpg" media="(min-width: 700px)">
+            <source srcset="images/image-one.jpg" media="(min-width: 500px)">
+            <img src="images/image-one.jpg" alt="Texas landscape" width="500" height="250">
+        </picture>
     </section>
 
     <section class="data-section">
