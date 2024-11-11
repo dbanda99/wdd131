@@ -8,7 +8,7 @@
     <meta name="author" content="David Banda">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-larger.css" media="(min-width: 768px)">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" preload>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -18,10 +18,11 @@
     </header>
 
     <section class="image-section">
+        <h2 class="visually-hidden">Texas Scenic View</h2> <!-- Accessible heading for screen readers -->
         <picture>
-            <source srcset="images/image-two.jpg" media="(min-width: 700px)">
-            <source srcset="images/image-one.jpg" media="(min-width: 500px)">
-            <img src="images/image-one.jpg" alt="Texas landscape" width="500" height="250">
+            <source srcset="images/image-one.jpg" media="(min-width: 700px)">
+            <source srcset="images/image-two.jpg" media="(min-width: 500px)">
+            <img src="images/image-two.jpg" alt="Scenic view of Texas landscape" width="500" height="250">
         </picture>
     </section>
 
@@ -40,7 +41,7 @@
     </section>
 
     <section class="weather-section">
-        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <h2>Weather</h2>
         <ul>
             <li><strong>Temperature:</strong> 10°C</li>
             <li><strong>Conditions:</strong> Partly Cloudy</li>
