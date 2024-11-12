@@ -62,7 +62,28 @@ document.addEventListener("DOMContentLoaded", () => {
             area: 116642,
             imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
         },
-        // Add more temple objects here...
+        // Additional temples
+        {
+            templeName: "Salt Lake Utah",
+            location: "Salt Lake City, Utah, United States",
+            dedicated: "1893, April, 6",
+            area: 253015,
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake/400x250/salt-lake-temple-exterior-1075694-wallpaper.jpg"
+        },
+        {
+            templeName: "Laie Hawaii",
+            location: "Laie, Hawaii, United States",
+            dedicated: "1919, November, 27",
+            area: 10000,
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/400x250/laie-hawaii-temple-sunrise-1075915-wallpaper.jpg"
+        },
+        {
+            templeName: "Tokyo Japan",
+            location: "Tokyo, Japan",
+            dedicated: "1980, October, 27",
+            area: 52966,
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-1398427-wallpaper.jpg"
+        }
     ];
 
     // Function to render temples
@@ -110,12 +131,20 @@ document.addEventListener("DOMContentLoaded", () => {
         renderTemples(filtered);
     }
 
-    // Add event listeners for filtering
+    // Event listeners for filtering
     document.querySelectorAll("nav a").forEach(link => {
         link.addEventListener("click", (event) => {
             event.preventDefault();
             const filter = event.target.getAttribute("data-filter");
             filterTemples(filter);
         });
+    });
+
+    // Hamburger menu functionality
+    const nav = document.querySelector("nav");
+    const toggleButton = document.getElementById("menu-toggle");
+
+    toggleButton.addEventListener("click", () => {
+        nav.classList.toggle("visible"); // Toggle visibility of the mobile nav menu
     });
 });
