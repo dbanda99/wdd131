@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
 
-    /* Styling for larger image */
+    /* Set image-section styling for larger screens */
     .image-section img {
         width: 100%;
         height: 100vh;

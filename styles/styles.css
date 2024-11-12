@@ -52,9 +52,16 @@ ul {
     line-height: 1.6;
 }
 
-.weather-section h2::after {
-    content: ' ⛅';
-    font-size: 1.5em;
+.weather-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em; /* Space between text and icon */
+}
+
+.weather-icon {
+    width: 24px; /* Set a fixed width for the SVG icon */
+    height: 24px;
+    vertical-align: middle;
 }
 
 footer {
@@ -63,4 +70,18 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
+}
+
+.weather-section h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    gap: 0.5em; /* Space between text and icon */
+    text-align: center;
+}
+
+.weather-icon {
+    width: 24px; /* Set a fixed width for the SVG icon */
+    height: 24px;
+    vertical-align: middle;
 }

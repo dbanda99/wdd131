@@ -16,41 +16,43 @@
 <body>
 
     <header class="hero">
-        <h1>Texas</h1>
+        <h1>Texas - A Look at the State</h1>
     </header>
 
-    <section class="image-section">
-        <h2 class="visually-hidden">Texas Scenic View</h2> <!-- Accessible heading for screen readers -->
-        <picture>
-            <source srcset="images/texas-one.webp" media="(min-width: 700px)">
-            <source srcset="images/texas-two.webp" media="(min-width: 500px)">
-            <img src="images/texas-two.webp" alt="Scenic view of Texas landscape" width="500" height="250">
-        </picture>
-    </section>
+    <main>
+        <section class="image-section">
+            <h2 class="visually-hidden">Texas Scenic View</h2> <!-- Accessible heading for screen readers -->
+            <picture>
+                <source srcset="images/texas-one.webp" media="(min-width: 700px)">
+                <source srcset="images/texas-two.webp" media="(min-width: 500px)">
+                <img src="images/texas-two.webp" alt="Scenic view of Texas landscape" width="500" height="250">
+            </picture>
+        </section>
 
-    <section class="data-section">
-        <h2>Data</h2>
-        <ul>
-            <li><strong>Area:</strong> 695,662 sq km</li>
-            <li><strong>Population:</strong> Approximately 29 million</li>
-            <li><strong>Capital:</strong> Austin</li>
-            <li><strong>Languages:</strong> English</li>
-            <li><strong>Currency:</strong> US Dollar (USD)</li>
-            <li><strong>Time Zone:</strong> UTC-6</li>
-            <li><strong>Calling Code:</strong> +1</li>
-            <li><strong>Internet TLD:</strong> .us</li>
-        </ul>
-    </section>
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 695,662 sq km</li>
+                <li><strong>Population:</strong> Approximately 29 million</li>
+                <li><strong>Capital:</strong> Austin</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> US Dollar (USD)</li>
+                <li><strong>Time Zone:</strong> UTC-6</li>
+                <li><strong>Calling Code:</strong> +1</li>
+                <li><strong>Internet TLD:</strong> .us</li>
+            </ul>
+        </section>
 
-    <section class="weather-section">
-        <h2>Weather</h2>
-        <ul>
-            <li><strong>Temperature:</strong> 10°C</li>
-            <li><strong>Conditions:</strong> Partly Cloudy</li>
-            <li><strong>Wind:</strong> 5 km/h</li>
-            <li><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></li>
-        </ul>
-    </section>
+        <section class="weather-section">
+            <h2>Weather <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon"></h2>
+            <ul>
+                <li><strong>Temperature:</strong> 10°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>©<span id="currentYear"></span> David Banda</p>
