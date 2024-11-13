@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00537a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 span {
+    color: #ffc107;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.about-me, .resources {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 0;
+    width: 45%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.about-me h2, .resources h2 {
+    background-color: #00537a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.about-me .content, .resources .content {
+    padding: 20px;
+}
+
+.about-me h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.flag-img {
+    width: 80px;
+    border: 1px solid #ddd;
+}
+
+/* Center content in Web Dev Resources */
+.resources .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height to center vertically */
+    text-align: left; /* Left-aligns the text within the centered container */
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resources ul li {
+    margin: 8px 0;
+}
+
+.resources ul li a {
+    color: #6d28d9;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #00537a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+#last-modified {
+    color: #ffc107;
+}
