@@ -1,0 +1,117 @@
+/* Mobile-first styling to ensure the form fully fits on the screen */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.85rem;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    width: 100%; /* Full width to fit the screen */
+    max-width: 400px; /* Limit width for larger devices */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4a264d;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  select, input, textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 8px;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  select:focus, input:focus, textarea:focus {
+    border-color: #4a264d;
+    box-shadow: 0 0 3px rgba(74, 38, 77, 0.5);
+    outline: none;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap; /* Ensure it wraps to the next line if necessary */
+  }
+  
+  .rating label {
+    font-size: 1rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating input:checked ~ label {
+    color: #f5c518;
+  }
+  
+  fieldset {
+    margin-bottom: 12px;
+    border: none;
+  }
+  
+  textarea {
+    width: 100%; /* Full width for textarea */
+    height: 80px;
+    resize: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #4a264d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Full width for the button */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #663b6c;
+    transform: translateY(-2px);
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

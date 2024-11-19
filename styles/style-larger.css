@@ -1,0 +1,113 @@
+/* Professional styling for larger screens (Desktop) */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .form-container {
+    max-width: 800px;
+    padding: 40px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #4a264d;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  select, input, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  select:focus, input:focus, textarea:focus {
+    border-color: #4a264d;
+    box-shadow: 0 0 5px rgba(74, 38, 77, 0.5);
+    outline: none;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .rating input:checked ~ label {
+    color: #f5c518;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 120px;
+    resize: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #4a264d;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #663b6c;
+    transform: translateY(-2px);
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  
